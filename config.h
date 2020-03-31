@@ -95,18 +95,18 @@ static const char *termcmd[]  		= { "st", NULL };
 static const char *browscmd[] 	 	= { "firefox", NULL };
 static const char *fbrowscmd[]		= { "st", "-e", "vifm", NULL };
 static const char *rcalccmd[]  		= { "st", "-t", "rcalc",    "-g", "80x24+625+325", "-e", "R", "--vanilla", "-q", NULL };
-static const char *goalscmd[] 	 	= { "st", "-t", "goals-st", "-g", "80x24+625+325", "-e", "/kbin/check_goals", NULL };
-static const char *calcmd[] 	 	= { "st", "-t", "cal", "-g", "20x12+855", "-e", "/kbin/check_cal", NULL };
+static const char *goalscmd[] 	 	= { "st", "-t", "goals-st", "-g", "80x24+625+325", "-e", "check_goals", NULL };
+static const char *calcmd[] 	 	= { "st", "-t", "cal", "-g", "20x12+855", "-e", "check_cal", NULL };
 // Function key commands
-static const char *brightdown[]  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_bright.sh", "-U", "5", NULL };
-static const char *brightup[]	  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_bright.sh", "-A", "5", NULL };
-static const char *brightdownsmall[]  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_bright.sh", "-U", "1", NULL };
-static const char *brightupsmall[]  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_bright.sh", "-A", "1", NULL };
-static const char *volmute[] 		= { "st", "-t", "funkey", "-e", "/kbin/sbar_audio.sh", "mute", "NULL", NULL };
-static const char *voldown[] 		= { "st", "-t", "funkey", "-e", "/kbin/sbar_audio.sh", "-", "5", NULL };
-static const char *volup[]  		= { "st", "-t", "funkey", "-e", "/kbin/sbar_audio.sh", "+", "5", NULL };
-static const char *voldownsmall[]  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_audio.sh", "-", "1", NULL };
-static const char *volupsmall[]  	= { "st", "-t", "funkey", "-e", "/kbin/sbar_audio.sh", "+", "1", NULL };
+static const char *brightdown[]  	= { "st", "-t", "funkey", "-e", "sbar_bright.sh", "-U", "5", NULL };
+static const char *brightup[]	  	= { "st", "-t", "funkey", "-e", "sbar_bright.sh", "-A", "5", NULL };
+static const char *brightdownsmall[]  	= { "st", "-t", "funkey", "-e", "sbar_bright.sh", "-U", "1", NULL };
+static const char *brightupsmall[]  	= { "st", "-t", "funkey", "-e", "sbar_bright.sh", "-A", "1", NULL };
+static const char *volmute[] 		= { "st", "-t", "funkey", "-e", "sbar_audio.sh", "mute", "NULL", NULL };
+static const char *voldown[] 		= { "st", "-t", "funkey", "-e", "sbar_audio.sh", "-", "5", NULL };
+static const char *volup[]  		= { "st", "-t", "funkey", "-e", "sbar_audio.sh", "+", "5", NULL };
+static const char *voldownsmall[]  	= { "st", "-t", "funkey", "-e", "sbar_audio.sh", "-", "1", NULL };
+static const char *volupsmall[]  	= { "st", "-t", "funkey", "-e", "sbar_audio.sh", "+", "1", NULL };
 static const char *prtsc[]	  	= { "st", "-t", "funkey", "-e", "scrot", "-q", "100", NULL };
 
 #include "movestack.c"
