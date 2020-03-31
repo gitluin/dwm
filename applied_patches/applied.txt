@@ -1,0 +1,9 @@
+dwm-6.0-singularborders.diff
+dwm-6.1-pertag_without_bar.diff
+dwm-alpha-20180613-b69c870.diff
+dwm-attachaside-20180126-db22360.diff
+dwm-emptyview-6.0.diff
+dwm-hide_vacant_tags-6.2.diff
+dwm-movestack-6.1.diff
+dwm-noborder-6.2.diff
+dwm-notitle-6.2.diff
