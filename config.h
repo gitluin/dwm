@@ -87,9 +87,7 @@ static const Layout layouts[] = {
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-b", "-l", "4", "-p", "Run", "-fn", dmenufont, "-nb", "#282a36", "-nf", "#f8f8f2", "-sb", "#1E88E5", "-sf", "#202020" , NULL};
+static const char *dmenucmd[] 		= { "dmenu_run", "-m", "-1", "-b", "-l", "4", "-p", "Run", "-fn", dmenufont, "-nb", "#282a36", "-nf", "#f8f8f2", "-sb", "#1E88E5", "-sf", "#202020" , NULL};
 static const char *termcmd[]  		= { "st", NULL };
 static const char *browscmd[] 	 	= { "firefox", NULL };
 static const char *fbrowscmd[]		= { "st", "-e", "vifm", NULL };
